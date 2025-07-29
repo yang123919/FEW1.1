@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centering a Div container</title>
+    <style>
+        .container{
+            width: 50%;
+            background-color: aqua;
+            padding: 20px;
+            margin:0 auto;
+            border: solid black;
+            border-radius: 50%;
+        }
+        .card{
+            max-width: 300px;
+            background-color: aquamarine;
+            border: 1px solid black;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(red, green, blue, alpha);
+        }
+        .card img{
+            max-width: 300px;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px 10px 20px 20px ;
+        }
+        .card-content{
+            padding: 20px;
+        }
+        .card-title{
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .card-text{
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>This div container is centered horizontally within the parent container</p>
+    </div>
+         
+    <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg" alt="">
+        <div class="card-content">
+            <h3 class="card-title">bird</h3>
+            <p class="card-text">This is a simple card layout</p>
+        </div>
+    </div>
+</body>
+</html>

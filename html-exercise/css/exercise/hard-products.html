@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Cards</title>
+    <style>
+        h1{
+            text-align: center;
+            height: 20px;
+        }
+        p{
+            text-align: center;
+            font-size: 10px;
+        }
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin: 0;
+            color: #2c3e50;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+            width: 100%;
+        }
+        .filter-container {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            width: 250px;
+            height: 800px;
+        }
+        .filter-group{
+            margin-bottom: 50px;
+        }
+        .filter-options{
+            padding: 0;
+            margin: 0;
+        }
+        .products-card{
+            gap: 24px;
+            max-width: 300px;
+            height: fit-content;
+            border: 1px solid lightgray;
+            box-shadow: 0 2px 4px rgba(red, green, blue, alpha) ;
+            padding: 10px;
+        }
+        .products-card img{
+            max-width: 300px;
+            object-fit: cover;
+            max-height: 200px;
+            border-radius: 10px 10px 20px 20px;
+        }
+        .products-price{
+            font-size: 24px;
+            color: red;
+        }
+        .products-grid{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            max-width: 1200px;
+            height: fit-content;
+        }
+        .products-text{
+            font-size: 12px;
+            text-align: start;
+            max-width: 300px;
+        }
+        .add-to-cart{
+            background-color: lightblue;
+            text-align: center;
+            width: 100%;
+            height: 36px;
+            color: white;
+            border-radius:5px 5px 5px 5px ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Products</h1>
+    <p>Explore our wide range of high-quality products designed to make your life better</p>
+    <div class="container">
+        <div class="filter-container">
+            <h2>Filter Products</h2>
+            <div class="filter-group">
+                <h3>Categories</h3>
+                <ul>
+                    <li class="filter-option">
+                        <input type="checkbox" id="all-products" checked>
+                        <label for="all-products">All Products</label>
+                    </li>
+                    <li class="filter-option">
+                        <input type="checkbox" id="electronics">
+                        <label for="electronics">Electronics</label>
+                    </li>
+                    <li class="filter-option">
+                        <input type="checkbox" id="clothing">
+                        <label for="clothing">Clothing</label>
+                    </li>
+                    <li class="filter-option">
+                        <input type="checkbox" id="home-kitchen">
+                        <label for="home-kitchen">Home & Kitchen</label>
+                    </li>
+                    <li class="filter-option">
+                        <input type="checkbox" id="sports-outdoors">
+                        <label for="sports-outdoors">Sports & Outdoors</label>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="filter-group">
+                <h3>Price</h3>
+                <ul>
+                    <li class="filter-option">
+                        <input type="checkbox" id="under25">
+                        <label for="under25">Under $25</label>
+                    </li>
+                    <li class="filter-option">
+                        <input type="checkbox" id="25-50">
+                        <label for="25-50">$25 - $50</label>
+                    </li>
+                    <li class="filter-option">
+                        <input type="checkbox" id="50-100">
+                        <label for="50-100">$50 - $100</label>
+                    </li>
+                    <li class="filter-option">
+                        <input type="checkbox" id="100-200">
+                        <label for="100-200">$100 - $200</label>
+                    </li>
+                    <li class="filter-option">
+                        <input type="checkbox" id="200-above">
+                        <label for="200-above">$200 & Above</label>
+                    </li>
+                </ul>
+              
+            </div>
+        </div>
+        <div class="products-grid">
+            <div class="products-card">
+                <img src=" https://placehold.co/300x200" alt="">
+                <h2>Wireless Headphones</h2>
+                <h3 class="products-price">RM120.00</h3>
+                <p class="products-text">Premium wireless headphones with noise cancellation and 24hour battery life</p>
+                <button type="add-to-cart" class="add-to-cart">Add to cart</button>
+            </div>
+            <div class="products-card">
+                <img src=" https://placehold.co/300x200" alt="">
+                <h2>Smart Watch</h2>
+                <h3 class="products-price">Rm600.00</h3>
+                <p class="products-text">Track your fitness,receive notifications,and more with this features packed smart watch</p>
+                <button type="add-to-cart" class="add-to-cart">Add to cart</button>
+            </div>
+            <div class="products-card">
+                <img src=" https://placehold.co/300x200" alt="">
+                <h2>Bluetooth Speaker</h2>
+                <h3 class="products-price">RM80.00</h3>
+                <p class="products-text">Portable bluetooth speaker with amazing sound quality and 12 hour battery life</p>
+                <button type="add-to-cart" class="add-to-cart">Add to cart</button>
+            </div>
+            <div class="products-card">
+                <img src=" https://placehold.co/300x200" alt="">
+                <h2>Running Shoes</h2>
+                <h3 class="products-price">RM90.00</h3>
+                <p class="products-text">Lightweight and comfortable running shoes for your daily workout routine</p>
+                <button type="add-to-cart" class="add-to-cart">Add to cart</button>
+            </div>
+            <div class="products-card">
+                <img src=" https://placehold.co/300x200" alt="">
+                <h2>Coffee Maker</h2>
+                <h3 class="products-price">RM70.00</h3>
+                <p class="products-text">Automatic coffee maker tahr brews delicious coffee with th eoress of a button</p>
+                <button type="add-to-cart" class="add-to-cart">Add to cart</button>
+            </div>
+            <div class="products-card">
+                <img src=" https://placehold.co/300x200" alt="">
+                <h2>Backpack</h2>
+                <h3 class="products-price">RM50.00</h3>
+                <p class="products-text">Durable backpack with multiple compartments,perfect for school or travel</p>
+                <button type="add-to-cart" class="add-to-cart">Add to cart</button>
+            </div>
+        </div>
+           
+    </div>
+    
+    
+</body>
+</html>

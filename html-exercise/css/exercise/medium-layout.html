@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Layout</title>
+    <style>
+        body{
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        header h1{
+            text-align: center;
+            width: 100%;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            height: 80px;
+            background-color: #f0f0f0;
+        }
+        /* .container div{
+            text-align: center;
+        } */
+        .sidebar{
+            display: flex;
+            width: 200px !important;
+            flex-direction: column;
+            justify-content: flex-start;
+            height: 100%;
+            background-color: #ddd; 
+            padding: 20px;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+            width: 100%;
+            
+        }
+        .main-content{
+            padding: 20px;
+        }
+        .main-content p{
+            width: 100%;
+        }
+        footer{
+            display: flex;
+            height: 60px;
+            background-color: #f0f0f0;
+            justify-content: center;
+        }
+        footer h3{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Application Layout</h1>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <h3>Navigation</h3>
+            <p>Dashboard</p>
+            <p>Projects</p>
+            <p>Tasks</p>
+            <p>Calendar</p>
+            <p>Report</p>
+            <p>Settings</p>
+        </div>
+        <div class="main-content">
+            <h3>Main Content Area</h3>
+            <p>This is a sidebar layout with a flexible main content area created using Flexbox</p>
+            <p>The header and footer span the full width of page,while the sidebar and the main content are positioned side by side</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            <p></p>
+        </div>
+
+    </div>
+    <footer>
+        <h3>Application Layout. All rights reserved.</h3>
+    </footer>
+</body>
+</html>
